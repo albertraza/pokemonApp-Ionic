@@ -1,0 +1,8 @@
+<ion-item (click)="goToPokemon((favPage ? index : index + 1), pokemonMetaData.name)" detail>
+  <ion-avatar slot="start">
+    <img [src]="(index | pokemonImg: (favPage? true : false))" alt="imagen">
+  </ion-avatar>
+  <ion-label>
+    <h2> {{ pokemonMetaData.name }} </h2>
+  </ion-label>
+</ion-item>
